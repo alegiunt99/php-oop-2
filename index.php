@@ -9,5 +9,5 @@ Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibil
  -->
 
 <?php
-
+    phpinfo();
 ?>
