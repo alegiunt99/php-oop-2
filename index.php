@@ -9,5 +9,11 @@ Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibil
  -->
 
 <?php
-    phpinfo();
+
+    include 'entities/user.php';
+
+    $sandroMazzola = new User('Sandro', 'Mazzola', 'sandroMazz92@alice.it', '+289182839489');
+
+    var_dump($sandroMazzola);
+
 ?>

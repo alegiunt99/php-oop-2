@@ -9,9 +9,18 @@
 
         public $isSubscribed = true;
 
-        function __construct($_name, $_surname, $_email){
+        function __construct($_name, $_surname, $_email, $_phoneNumber){
+            
+            $this->name = $_name;
+
+            $this->surname = $_surname;
+
+            $this->email = $_email;
+
+            $this->phoneNumber = $_phoneNumber;
 
         }
+
     }
 
 
