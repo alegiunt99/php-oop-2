@@ -13,10 +13,18 @@ Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibil
     include 'entities/user.php';
 
     $sandroMazzola = new User('Sandro', 'Mazzola', 'sandroMazz92@alice.it', '+289182839489');
+
+
     echo('<pre>');
     var_dump($sandroMazzola);
     echo('</pre>');
 
-    echo('<p>'. $sandroMazzola->subscribed() . '</p>');
+
+    $marcoAsensio = new SubcribedUser('Marco', 'Asensio', 'e_finita41@cardiff.cl', '+234987654298');
+    
+    $marcoAsensio->isSubscribed = true;
+    echo('<pre>');
+    var_dump($marcoAsensio);
+    echo('</pre>');
 
 ?>

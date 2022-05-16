@@ -4,11 +4,10 @@
         public $name;
         public $surname;
         public $email;
-        public $sconto = 0;
 
         protected $phoneNumber;
 
-        private $isSubscribed = true;
+        public $isSubscribed = false;
 
         function __construct($_name, $_surname, $_email, $_phoneNumber){
             
@@ -22,17 +21,15 @@
 
         }
 
-        public function subscribed(){
+        
 
-            if ($this->isSubcribed = false) {
-                return $this->sconto = 0;
-            }else{
-                return $this->sconto = 20;
-            }
-            echo($this->sconto);
-        }
     }
 
+    class SubcribedUser extends User{
+
+        public $sconto = 20;
+
+    }
     
 
 ?>
