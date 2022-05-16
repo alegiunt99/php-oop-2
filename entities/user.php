@@ -1,12 +1,16 @@
 <?php
+
     include 'creditCard.php';
-    
+
+    include 'shopProducts.php';
+
     class User{
         
 
         public $name;
         public $surname;
         public $email;
+        public $choosedProducts = [];
 
         protected $phoneNumber;
 
@@ -40,6 +44,16 @@
     class SubcribedUser extends User{
 
         public $sconto = 20;
+
+        public function setDiscount(){
+            
+            $discount = ($this->product_price / 20) * 100;
+
+            $this->product_price = $this->product_price - $discount;
+
+            return $this->product_price;
+
+        }
 
     }
     

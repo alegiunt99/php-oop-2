@@ -22,6 +22,7 @@ Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibil
 
     echo($sandroMazzola->getCreditCard('1748-3920-1839-1568', 2028));
 
+
     // UTENTE 2
     $marcoAsensio = new SubcribedUser('Marco', 'Asensio', 'e_finita41@cardiff.cl', '+234987654298');
     
@@ -31,5 +32,7 @@ Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibil
     echo('</pre>');
 
     echo($marcoAsensio->getCreditCard('1718-3921-1833-1368', 2020));
+
+    
 
 ?>
